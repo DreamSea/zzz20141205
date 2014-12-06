@@ -227,7 +227,7 @@ config(['$routeProvider', function($routeProvider) {
                                         return 'arm-state';
 										
 									case 'weather':
-										return 'current-temperature' + 'humidity' + 'wind-speed';
+										return 'current-temperature';
 										
                                 }
                             };
