@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>GatoBot</title>
+    <title>Device Location</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
@@ -32,11 +32,34 @@
   <?php include 'components/navbar.php' ?>
 	
     <div class="container">
-	<div class="jumbotron starter-template">
-	<a href="byDevice.php">
-		<img src="cat4.png"  class="img-rounded">
-      </div>
-	</a>
+	<?php
+		include 'notGithub/mysql_config.php';
+		$dbh = new PDO("mysql:host=$mysql_hostname;dbname=$mysql_dbname", $mysql_username, $mysql_password, array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
+	?>
+	<br><br>
+	<table class="table table-striped">
+	
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Device Name</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody>
+		<?php
+			$stmt = $dbh->prepare("SELECT * FROM devices");
+			$stmt->execute();
+			$numRows = $stmt->rowCount();
+			
+			for ($i = 0; $i < $numRows; $i++)
+			{
+				$result = $stmt->fetch(PDO::FETCH_ASSOC);
+				include 'components/tableRow.php';
+			}
+		?>
+      </tbody>
+    </table>
 
     </div><!-- /.container -->
   <?php include 'components/footer.php' ?>

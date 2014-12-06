@@ -31,13 +31,90 @@
   <body>
   <?php include 'components/navbar.php' ?>
 	
-    <div class="container">
-	<div class="jumbotron starter-template">
-	<a href="byDevice.php">
-		<img src="cat4.png"  class="img-rounded">
-      </div>
-	</a>
+     <div class="container starter-template">
+      <!-- Example row of columns -->
+      <div class="row">
+		<div class="col-md-12">
+			<h2>Your Temperature</h2>
+		</div>
+        <div class="col-md-offset-4 col-md-2">
+				<p>Current: <h1>71</h1></p>
+		</div>
+			<div class="col-md-2">
+				<p>Past Average: <h1>73</h1></p>
+			</div>
 
+		<div class="col-md-offset-4 col-md-4">
+			<p>Rating:</p>
+			<div class="alert alert-success" role="alert"><b>Good:</b> Better than average</div>
+		</div>			
+		</div>
+		<br>
+		<hr>
+		<br>
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Group</h2>
+			</div>
+			<div class="col-md-offset-5 col-md-2">
+				<p>Rank: <h1>2/5</h1></p>
+			</div>
+			<div class="col-md-offset-2 col-md-8 no-align">
+			<table class="table">
+			  <thead>
+				<tr>
+				  <th>Rank</th>
+				  <th>Household</th>
+				  <th>Temperature</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+				  <td>1</td>
+				  <td>Smiths</td>
+				  <td>70</td>
+				</tr>
+				<tr class="success">
+				  <td>2</td>
+				  <td>Team Gato</td>
+				  <td>71</td>
+				</tr>
+				<tr>
+				  <td>3</td>
+				  <td>Johnsons</td>
+				  <td>73</td>
+				</tr>
+				<tr>
+				  <td>4</td>
+				  <td>Williams</td>
+				  <td>77</td>
+				</tr>
+				<tr>
+				  <td>5</td>
+				  <td>Millers</td>
+				  <td>80</td>
+				</tr>
+			  </tbody>
+			</table>
+		</div>
+		</div>
+		<br>
+		<hr>
+		<br>
+		
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Community</h2>
+			</div>
+			<div class="col-md-offset-5 col-md-2">
+				<p>Current: <h1>71</h1></p>
+			</div>
+			<div class="col-md-offset-4 col-md-4">
+				<p>Rating:</p>
+				<div class="alert alert-warning" role="alert"><b>Okay:</b> Average</div>
+			</div>
+		</div>
+		
     </div><!-- /.container -->
   <?php include 'components/footer.php' ?>
 

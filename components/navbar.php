@@ -10,13 +10,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">GATO</a>
+          <a class="navbar-brand" href="index.php">GATO</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <!--li class="active"><a href="#">by Device</a></li-->
-            <li><a href="index.php">Status by Device</a></li>
-            <li><a href="index.php">Status by Location</a></li>
+            <li><a href="byDevice.php">Status by Device</a></li>
+            <li><a href="thermostat.php">Thermostat</a></li>
             <li><a href="fenceMap.php">Map</a></li>
           </ul>
 		  <ul class="nav navbar-nav navbar-right">
