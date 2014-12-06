@@ -31,7 +31,6 @@
             </tbody>
         </table>
 		<div class="panel-heading">Weather</div>
-
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -43,10 +42,12 @@
             </thead>
             <tbody>
                 <tr ng-repeat="device in devices.devices" ng-class="{'is-updating': device.isUpdating}">
-                    <td>{{device.get('name')}}</td>
-                    <td>{{device.get('deviceType')}}</td>
-                    <td>{{device.get('status') === '0' ? 'Online' : 'Offline'}}</td>
-                    <td>{{(device.get('temperature')/2 - 40)*(9/5) + 32}} F</td>
+					<div ng-if="device.get('deviceType') == 'thermostat')">
+						<td>{{device.get('name')}}</td>
+						<td>{{device.get('deviceType')}}</td>
+						<td>{{device.get('status') === '0' ? 'Online' : 'Offline'}}</td>
+						<td>{{(device.get('temperature')/2 - 40)*(9/5) + 32}} F</td>
+					</div>
                 </tr>
             </tbody>
         </table>
