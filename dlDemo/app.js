@@ -79,6 +79,9 @@ config(['$routeProvider', function($routeProvider) {
     }])
     .controller('LoginCtrl', ['$location', 'apiService', 'Auth', function($location, apiService, Auth) {
         var self = this;
+		self.userId = "553474465";
+		self.password = "2KC]zdN0SD";
+		self.appKey ="OE_CA6F9919E425C3C2_1";
 
         // destroy auth data and session storage
         Auth.destroy();
@@ -92,6 +95,7 @@ config(['$routeProvider', function($routeProvider) {
                     appKey: self.appKey,
                     domain: config.domain
                 };
+				
 
             // post to api for login
             apiService.post(api, data, true).then(function(data) {
