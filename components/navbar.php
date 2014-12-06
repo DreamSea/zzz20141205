@@ -17,7 +17,7 @@
             <!--li class="active"><a href="#">by Device</a></li-->
             <li><a href="byDevice.php">Status by Device</a></li>
             <li><a href="thermostat.php">Thermostat</a></li>
-            <li><a href="fenceMap.php">Map</a></li>
+            <li><a href="#">Map</a></li>
           </ul>
 		  <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Register Device</a></li>
