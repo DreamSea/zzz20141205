@@ -140,7 +140,8 @@ config(['$routeProvider', function($routeProvider) {
 										'thermostat',
 										'weather',
 										'garage-door-controller',
-										'garage-door-sensor'
+										//'garage-door-sensor',
+										'panic-device'
 										]; // display only toggle devices
 
                     if (data && data.content) {
@@ -226,7 +227,8 @@ config(['$routeProvider', function($routeProvider) {
                                         return 'arm-state';
 										
 									case 'weather':
-										return 'status';
+										return 'current-temperature' + 'humidity' + 'wind-speed';
+										
                                 }
                             };
 
