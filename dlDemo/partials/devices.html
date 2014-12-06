@@ -46,7 +46,7 @@
                     <td>{{device.get('name')}}</td>
                     <td>{{device.get('deviceType')}}</td>
                     <td>{{device.get('status') === '0' ? 'Online' : 'Offline'}}</td>
-                    <td>{{device.get('temperature')}}</td>
+                    <td>{{(device.get('temperature')/2 - 40)}}</td>
                 </tr>
             </tbody>
         </table>
