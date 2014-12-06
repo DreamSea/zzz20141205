@@ -1,6 +1,11 @@
 .login .input-group {
     margin-bottom: 25px
 }
+
+.dt_door-lock{
+display:none;
+}
+
 .login-box {
     margin-top: 50px;
 }
