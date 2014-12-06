@@ -42,7 +42,7 @@
             </thead>
             <tbody>
                 <tr ng-repeat="device in devices.devices" ng-class="{'is-updating': device.isUpdating}">
-					<div ng-if="device.get('deviceType') == 'thermostat' ">
+					<div ng-if="device.get('deviceType') == "thermostat" ">
 						<td>{{device.get('name')}}</td>
 						<td>{{device.get('deviceType')}}</td>
 						<td>{{device.get('status') === '0' ? 'Online' : 'Offline'}}</td>
