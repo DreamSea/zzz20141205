@@ -136,7 +136,7 @@ config(['$routeProvider', function($routeProvider) {
                         includeTypes = ['light-control',
 										'smart-plug',
 										'door-lock',
-										'water-shutoff',
+										//'water-shutoff',
 										'thermostat',
 										'weather',
 										'garage-door-controller',
@@ -224,7 +224,7 @@ config(['$routeProvider', function($routeProvider) {
                                         return 'webcam';
 
                                     case 'panic-device':
-                                        return 'arm-state';
+                                        return 'status';
 										
 									case 'weather':
 										return 'status';
