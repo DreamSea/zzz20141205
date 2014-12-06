@@ -133,7 +133,15 @@ config(['$routeProvider', function($routeProvider) {
 
                 apiService.get('devices').then(function(data) {
                     var devicesList = [],
-                        includeTypes = ['light-control', 'smart-plug', 'door-lock', 'water-shutoff', 'thermostat', 'weather']; // display only toggle devices
+                        includeTypes = ['light-control',
+										'smart-plug',
+										'door-lock',
+										'water-shutoff',
+										'thermostat',
+										'weather',
+										'garage-door-controller',
+										'garage-door-sensor'
+										]; // display only toggle devices
 
                     if (data && data.content) {
                         _.each(data.content, function(device) {
@@ -216,6 +224,9 @@ config(['$routeProvider', function($routeProvider) {
 
                                     case 'panic-device':
                                         return 'arm-state';
+										
+									case 'weather':
+										return 'status';
                                 }
                             };
 
