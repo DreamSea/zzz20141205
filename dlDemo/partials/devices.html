@@ -60,11 +60,11 @@
 					</td>	
                 </tr>
                 <tr class="dt_{{device.get('deviceType')}}" ng-repeat="device in devices.devices" ng-class="{'is-updating': device.isUpdating}">
-					<td>Change Mode</td>
+					<td>Current Mode</td>
 					<td></td>
 					<td></td>
-					<td>Current Control: </td>
-					<td>blank</td>
+					<td>Device Capabilities: </td>
+					<td>{{(device.get('capabilities')}}</td>	
                 </tr>
             </tbody>
         </table>

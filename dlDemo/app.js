@@ -210,7 +210,7 @@ config(['$routeProvider', function($routeProvider) {
 
                                     case 'thermostat':
                                         return 'thermostat-mode';
-
+										
                                     case 'water-sensor':
                                         return 'water-state';
 
@@ -228,9 +228,6 @@ config(['$routeProvider', function($routeProvider) {
 										
 									case 'weather':
 										return 'status';
-										
-									case 'weather':
-										return 'temperature';
 										
 									case 'motion-sensor':
 										return 'status';
