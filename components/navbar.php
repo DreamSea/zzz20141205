@@ -10,13 +10,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Status</a>
+          <a class="navbar-brand" href="#">GATO</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <!--li class="active"><a href="#">by Device</a></li-->
-            <li><a href="#">by Device</a></li>
-            <li><a href="#">by Location</a></li>
+            <li><a href="index.php">Status by Device</a></li>
+            <li><a href="index.php">Status by Location</a></li>
+            <li><a href="switch.php">Switch</a></li>
           </ul>
 		  <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Register Device</a></li>

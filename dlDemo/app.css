@@ -1,0 +1,47 @@
+.login .input-group {
+    margin-bottom: 25px
+}
+.login-box {
+    margin-top: 50px;
+}
+.sign-up {
+    border-top: 1px solid #888;
+    padding-top: 15px;
+    font-size: 85%;
+}
+.content-wrap {
+    margin-top: 20px;
+}
+.action {
+    text-transform: uppercase;
+}
+.updating {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    /* The Fallback */
+    
+    background: rgba(255, 255, 255, .8);
+    text-align: center;
+    z-index: 1000;
+}
+.updating i {
+    font-size: 20px;
+    margin-top: 5px;
+}
+.is-updating .updating {
+    display: block;
+}
+.btn-group.gap {
+  margin-right: 30px;
+}
+.btn {
+  min-width: 80px;
+}
+.pager li {
+  cursor: pointer;
+}

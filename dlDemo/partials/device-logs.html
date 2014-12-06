@@ -1,0 +1,42 @@
+<div class="deviceLogs content-wrap">
+    <nav>
+        <ul class="pager">
+            <li class="previous" ng-class="{disabled: !deviceLogs.previousPage}"><a ng-click="deviceLogs.previous()">&larr; Older</a>
+            </li>
+            <li class="next" ng-class="{disabled: !deviceLogs.nextPage}"><a ng-click="deviceLogs.next()">Newer &rarr;</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">Device Logs</div>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="deviceLog in deviceLogs.deviceLogs" ng-class="{'is-updating': deviceLog.isUpdating}">
+                    <td>{{deviceLog.deviceName}}</td>
+                    <td>{{deviceLog.deviceType}}</td>
+                    <td>{{deviceLog.name}}</td>
+                    <td>{{deviceLog.timestamp | date:'medium'}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <nav>
+        <ul class="pager">
+            <li class="previous" ng-class="{disabled: !deviceLogs.previousPage}"><a ng-click="deviceLogs.previous()">&larr; Older</a>
+            </li>
+            <li class="next" ng-class="{disabled: !deviceLogs.nextPage}"><a ng-click="deviceLogs.next()">Newer &rarr;</a>
+            </li>
+        </ul>
+    </nav>
+</div>
