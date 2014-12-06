@@ -44,9 +44,9 @@
             <tbody>
 				<tr class="dt_{{device.get('deviceType')}}" ng-repeat="device in devices.devices" ng-class="{'is-updating': device.isUpdating}">
 						<td>Home</td>
+						<td>{{device.get('deviceType')}}</td>
 						<td>{{device.get('status') === '0' ? 'Online' : 'Offline'}}</td>
 						<td>{{(device.get('temperature')/2 - 40)*(9/5) + 32}} F</td>
-						<td>Current Control: {{(device.get('thermostat-mode')</td>
 						<td class="action">
                         <div class="form-group">
                             <div class="input-group">
@@ -62,8 +62,8 @@
                 <tr class="dt_{{device.get('deviceType')}}" ng-repeat="device in devices.devices" ng-class="{'is-updating': device.isUpdating}">
 						<td>Change Mode</td>
 						<td></td>
-						<td></td>
-						<td></td>
+						<td>Current Control: </td>
+						<td>{{(device.get('thermostat-mode')</td>
 						<td class="action">
                         <div class="form-group">
                             <div class="input-group">
