@@ -12,7 +12,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="device in devices.devices" ng-class="{'is-updating': device.isUpdating}">
+                <tr class="dtdevices_{{device.get('deviceType')}}"  ng-repeat="device in devices.devices" ng-class="{'is-updating': device.isUpdating}">
                     <td>{{device.get('name')}}</td>
                     <td>{{device.get('deviceType')}}</td>
                     <td>{{device.get('status') === '0' ? 'Online' : 'Offline'}}</td>

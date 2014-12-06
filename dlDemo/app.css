@@ -2,9 +2,17 @@
     margin-bottom: 25px
 }
 
-.dt_door-lock, .dt_garage-door-controller, .dt_smart-plug, .dt_weather{
-display:none;
-}
+.dtdevices_thermostat, 
+.dtdevices_weather{
+	display:none;
+	}
+
+.dt_door-lock, 
+.dt_garage-door-controller, 
+.dt_smart-plug, 
+.dt_weather{
+	display:none;
+	}
 
 .login-box {
     margin-top: 50px;
