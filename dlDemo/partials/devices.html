@@ -41,7 +41,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="device in devices.devices" ng-class="{'is-updating': device.isUpdating}">
+                <tr class="dt_{{device.get('deviceType')}}" ng-repeat="device in devices.devices" ng-class="{'is-updating': device.isUpdating}">
 					<div class="dt_{{device.get('deviceType')}}" ng-if="device.get('deviceType') === 'thermostat' ">
 						<td>{{device.get('name')}}</td>
 						<td>{{device.get('deviceType')}}</td>
