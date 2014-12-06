@@ -62,19 +62,9 @@
                 <tr class="dt_{{device.get('deviceType')}}" ng-repeat="device in devices.devices" ng-class="{'is-updating': device.isUpdating}">
 						<td>Change Mode</td>
 						<td></td>
+						<td></td>
 						<td>Current Control: </td>
-						<td>{{(device.get('thermostat-mode')</td>
-						<td class="action">
-                        <div class="form-group">
-                            <div class="input-group">
-                                <div class="updating"><i class="fa fa-spinner fa-spin"></i>
-                                </div>
-                                <div class="btn-group">
-                                    <a class="btn btn-sm" ng-class="action === device.getCurrentAction() ? 'btn-primary' : 'btn-default'" ng-repeat="action in device.getActionOptions()" ng-click="device.updateAction(action)">{{action}}</a>
-                                </div>
-                            </div>
-                        </div>
-                    </td>	
+						<td>{{(device.get('thermostat-mode')}}</td>
                 </tr>
             </tbody>
         </table>
