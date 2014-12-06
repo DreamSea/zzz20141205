@@ -30,23 +30,40 @@
                 </tr>
             </tbody>
         </table>
-		<div class="panel-heading">Weather</div>
+		<div class="panel-heading">Weather Command Center</div>
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Type</th>
+                    <th>Location</th>
+                    <th>Device</th>
                     <th>Status</th>
                     <th>Temp</th>
 					<th>Control</th>
                 </tr>
             </thead>
             <tbody>
-                <tr class="dt_{{device.get('deviceType')}}" ng-repeat="device in devices.devices" ng-class="{'is-updating': device.isUpdating}">
-						<td>Current Temperature</td>
-						<td>{{device.get('deviceType')}}</td>
+				<tr class="dt_{{device.get('deviceType')}}" ng-repeat="device in devices.devices" ng-class="{'is-updating': device.isUpdating}">
+						<td>Home</td>
 						<td>{{device.get('status') === '0' ? 'Online' : 'Offline'}}</td>
 						<td>{{(device.get('temperature')/2 - 40)*(9/5) + 32}} F</td>
+						<td>Current Control: {{(device.get('thermostat-mode')</td>
+						<td class="action">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="updating"><i class="fa fa-spinner fa-spin"></i>
+                                </div>
+                                <div class="btn-group">
+                                    <a class="btn btn-sm" ng-class="action === device.getCurrentAction() ? 'btn-primary' : 'btn-default'" ng-repeat="action in device.getActionOptions()" ng-click="device.updateAction(action)">{{action}}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </td>	
+                </tr>
+                <tr class="dt_{{device.get('deviceType')}}" ng-repeat="device in devices.devices" ng-class="{'is-updating': device.isUpdating}">
+						<td>Change Mode</td>
+						<td></td>
+						<td></td>
+						<td></td>
 						<td class="action">
                         <div class="form-group">
                             <div class="input-group">
