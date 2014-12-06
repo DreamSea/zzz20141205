@@ -15,7 +15,7 @@
                 <tr ng-repeat="device in devices.devices" ng-class="{'is-updating': device.isUpdating}">
                     <td>{{device.get('name')}}</td>
                     <td>{{device.get('deviceType')}}</td>
-                    <td>{{device.get('status') === '0'}}</td>
+                    <td>{{device.get('status') === '0' ? 'Online' : 'Offline'}}</td>
                     <td class="action">
                         <div class="form-group">
                             <div class="input-group">
