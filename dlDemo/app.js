@@ -229,7 +229,7 @@ config(['$routeProvider', function($routeProvider) {
 									case 'weather':
 										return 'status';
 										
-									case 'motion-sensor'
+									case 'motion-sensor':
 										return 'status';
 										
                                 }

@@ -17,7 +17,7 @@
             <!--li class="active"><a href="#">by Device</a></li-->
             <li><a href="index.php">Status by Device</a></li>
             <li><a href="index.php">Status by Location</a></li>
-            <li><a href="switch.php">Switch</a></li>
+            <li><a href="fenceMap.php">Map</a></li>
           </ul>
 		  <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Register Device</a></li>
