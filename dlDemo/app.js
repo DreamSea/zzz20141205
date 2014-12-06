@@ -229,6 +229,9 @@ config(['$routeProvider', function($routeProvider) {
 									case 'weather':
 										return 'status';
 										
+									case 'motion-sensor'
+										return 'status';
+										
                                 }
                             };
 
