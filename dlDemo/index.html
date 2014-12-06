@@ -15,6 +15,13 @@
 <body>
     <header ng-include="'partials/header.html'"></header>
     <div ng-view class="container"></div>
+	
+	<script>
+		var elem = document.getElementById("login-username");
+		elem.value = "My default value";
+		$('#login-username').val('this is some example text');
+
+	</script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

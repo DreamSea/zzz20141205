@@ -27,7 +27,7 @@ config(['$routeProvider', function($routeProvider) {
             controller: 'DevicesCtrl as devices'
         });
 
-        $routeProvider.when('/programs', {
+        /*$routeProvider.when('/programs', {
             templateUrl: 'partials/programs.html',
             controller: 'ProgramsCtrl as programs'
         });
@@ -35,7 +35,7 @@ config(['$routeProvider', function($routeProvider) {
         $routeProvider.when('/device-logs', {
             templateUrl: 'partials/device-logs.html',
             controller: 'DeviceLogsCtrl as deviceLogs'
-        });
+        });*/
 
         $routeProvider.otherwise({
             redirectTo: '/login'

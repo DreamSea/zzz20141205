@@ -21,6 +21,8 @@
           </ul>
 		  <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Register Device</a></li>
+			<li><a href="dlDemo/index.html">Login</a></li>
+			
           </ul>
         </div><!--/.nav-collapse -->
       </div>
