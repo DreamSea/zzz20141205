@@ -263,7 +263,7 @@ config(['$routeProvider', function($routeProvider) {
                             };
 
                             // only include toggle devices
-                           if (_.contains(includeTypes, device.deviceType)){ // && device.getCurrentAction()) {
+                           if (_.contains(includeTypes, device.deviceType)){
                                 devicesList.push(device);
                             }
                         });
