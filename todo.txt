@@ -1,0 +1,6 @@
+front
+- add device
+- table: device - location
+
+back
+- generate location buttons for device
